@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d03599.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initila-scale=1.0">
+<title>Home Page</title>
+<link rel ="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+	<div class ="wrapper">
+
+	<img src = "images/logo.png" class ="logo">
+	<div class="togglearea">
+		<label for="toggle">
+<span></span>
+<span></span>
+<span></span>
+		</label>
+	</div>
+
+
+	<input type = "checkbox" id="toggle">
+	<div class="navbar">
+		<a href="#">Home</a>
+		<a href="#">about us </a>
+		<select name ="forma" onchange ="location = this.value;">
+				<option value="home.php">Training programs</option>
+				<option value ="contact.php">AWS re/Start</option>
+				<option value = "portfolio.php">CompTIA</option>
+			</select>
+		<a href="#">services</a>
+		<a href="#">contact us</a>
+		
+
+	</div>
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/second.jpg" style="width:100%">
+  <div class="text">New shopping clothes comming soon</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/image1.jfif" style="width:100%">
+  <div class="text">Cyber security</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/download.jpeg" style="width:100%">
+  <div class="text">system support</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<div class="container-text">
+	<h1>WELOCME TO TLOU FOUNDATION COLLEGE</h1>
+	<p class="para1">TLOU foundation are non-profit organization found on principals of assisting south africa to battle the plight of skills shortage and mismatches in all sectors of south africa</p>
+
+	<p class = "para2">The foundation Board of directors are previosly disadvantage individuals signifying Tlou Foundation heart to invest and contibute towars skills development in supports of Goverments initiatives for empowering the unemployement and employ individuals through skills development program focus on rural economic development in the line with the National Skills Development Strategy III(NSDS)</p>
+</div>
+
+<div class ="service-txt">
+<div class ="service-txt">
+<h1 class ="txt-serv">What We Offer And More</h1>
+</div>
+
+<div class="Box-container">
+	
+	<div class="box1">
+		<p class ="graph">system development</p>
+		<img src ="images/web.png">
+		<p>system course prepares learners for entry into the work place...</p>
+	</div>
+
+	<div class ="box2">
+		<p class = "graph">cloud computing</p>
+		<img src ="images/cloud.png">
+		<p>cloud computing are trained about share group of resources...</p>
+	</div>
+
+	<div class ="box3">
+		<p class ="graph">cyber security</p>
+		<img src ="images/cyber.png">
+		<p>our cyber security training courses provide specialized skills</p>
+	</div>
+</div>
+<h1 class ="accred">Accreditation</h1>
+
+<div class ="accreditation-Box">
+	
+	<div class ="box4">
+		<img src ="image/aws.jpg">
+	</div>
+
+	<div class ="box5">
+		<img src = "image/comptia.jpg">
+	</div>
+
+	<div class="box6">
+		<img src ="image/fortinet.jpg">
+	</div>
+</div>
+
+
+
+	
+<footer>
+				<div class = "iconn">
+				<a href="#" class="fa fa-facebook"></a>  
+				<a href="#" class="fa fa-twitter"></a>  
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-youtube"></a> 
+			</div>
+			
+			<div class ="Details">
+				<p class ="parag">Phone: 011 805 9288</p>
+				<p class ="parag">email: </p>
+				<p class ="parag">Address: 507 Nupen Cresent</p> 
+				<p class = "parag">The palms office park halfway house midrand</p>
+				<p class ="parag">@copyright 2021 Tlou Foundation </p>
+
+
+			</div>
+				
+
+			</footer>
+
+		</div>
+
+		</body>
+			
+			
+</html>
+
